@@ -75,10 +75,11 @@ unbundled bundle exec rails generate spree:install \
   $@
 
 unbundled bundle exec rails generate solidus:auth:install
+unbundled bundle exec rails generate super_good:solidus_taxjar:install
 
 echo
 echo "🚀 Sandbox app successfully created for $extension_name!"
 echo "🚀 Using $RAILSDB and Solidus $BRANCH"
 echo "🚀 Use 'export DB=[postgres|mysql|sqlite]' to control the DB adapter"
-echo "🚀 Use 'export SOLIDUS_BRANCH=<BRANCH-NAME>' to control the Solidus version"
+echo "🚀 Use 'export SOLIDUS_BRANCH=<BRANCH-NAME>' to control tqhe Solidus version"
 echo "🚀 This app is intended for test purposes."
